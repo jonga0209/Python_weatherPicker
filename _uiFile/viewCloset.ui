@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
-  <widget class="QPushButton" name="btn_closet">
+  <widget class="QPushButton" name="c_btn_add">
    <property name="geometry">
     <rect>
      <x>1100</x>
@@ -46,7 +46,7 @@ border:0px;</string>
     <string>추가</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_closet_2">
+  <widget class="QPushButton" name="c_btn_main">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -64,7 +64,7 @@ border:0px;</string>
     <string>메인</string>
    </property>
   </widget>
-  <widget class="QScrollArea" name="scrollArea">
+  <widget class="QScrollArea" name="c_sa_scrollarea">
    <property name="geometry">
     <rect>
      <x>110</x>

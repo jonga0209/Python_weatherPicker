@@ -28,7 +28,7 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
-  <widget class="QPushButton" name="btn_closet">
+  <widget class="QPushButton" name="m_btn_closet">
    <property name="geometry">
     <rect>
      <x>1110</x>
@@ -46,7 +46,7 @@ border:0px;</string>
     <string>옷장</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_reco">
+  <widget class="QPushButton" name="m_btn_reco">
    <property name="geometry">
     <rect>
      <x>600</x>
@@ -64,7 +64,7 @@ border:0px;</string>
     <string>추천</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="m_la_year">
    <property name="geometry">
     <rect>
      <x>520</x>
@@ -84,7 +84,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="m_la_day">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -104,7 +104,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="la_state">
+  <widget class="QLabel" name="m_la_state">
    <property name="geometry">
     <rect>
      <x>730</x>
@@ -124,7 +124,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_4">
+  <widget class="QLabel" name="m_la_tem">
    <property name="geometry">
     <rect>
      <x>340</x>
