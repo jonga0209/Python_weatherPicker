@@ -36,7 +36,8 @@ class MainDialog(QDialog):
     def btn_recommend(self):
         self.accept()
         r = RecommendDialog(self)
-        print("클릭")
+        r.show()
+
 
 
 if __name__ == "__main__" :
