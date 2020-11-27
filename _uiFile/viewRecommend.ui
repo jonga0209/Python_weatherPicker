@@ -127,9 +127,9 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="r_img_clothes1">
    <property name="geometry">
     <rect>
-     <x>470</x>
+     <x>429</x>
      <y>150</y>
-     <width>300</width>
+     <width>361</width>
      <height>460</height>
     </rect>
    </property>
@@ -147,7 +147,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="r_la_clothes1">
    <property name="geometry">
     <rect>
-     <x>490</x>
+     <x>480</x>
      <y>650</y>
      <width>271</width>
      <height>61</height>

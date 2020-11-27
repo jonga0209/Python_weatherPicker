@@ -32,7 +32,7 @@
    <property name="geometry">
     <rect>
      <x>1100</x>
-     <y>680</y>
+     <y>690</y>
      <width>150</width>
      <height>80</height>
     </rect>
@@ -50,7 +50,7 @@ border:0px;</string>
    <property name="geometry">
     <rect>
      <x>900</x>
-     <y>680</y>
+     <y>690</y>
      <width>150</width>
      <height>80</height>
     </rect>
@@ -67,8 +67,8 @@ border:0px;</string>
   <widget class="QLabel" name="a_la_id">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>220</y>
+     <x>710</x>
+     <y>70</y>
      <width>161</width>
      <height>61</height>
     </rect>
@@ -87,8 +87,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="a_la_season">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>310</y>
+     <x>710</x>
+     <y>230</y>
      <width>161</width>
      <height>61</height>
     </rect>
@@ -107,8 +107,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="a_la_tem">
    <property name="geometry">
     <rect>
-     <x>690</x>
-     <y>400</y>
+     <x>710</x>
+     <y>430</y>
      <width>161</width>
      <height>61</height>
     </rect>
@@ -127,8 +127,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="a_img_tem">
    <property name="geometry">
     <rect>
-     <x>1150</x>
-     <y>130</y>
+     <x>1160</x>
+     <y>110</y>
      <width>71</width>
      <height>460</height>
     </rect>
@@ -148,7 +148,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>90</y>
+     <y>70</y>
      <width>141</width>
      <height>201</height>
     </rect>
@@ -168,7 +168,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>90</y>
+     <y>70</y>
      <width>141</width>
      <height>201</height>
     </rect>
@@ -187,49 +187,15 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QTextEdit" name="a_ta_name">
    <property name="geometry">
     <rect>
-     <x>880</x>
-     <y>220</y>
-     <width>221</width>
-     <height>61</height>
+     <x>710</x>
+     <y>150</y>
+     <width>211</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 193, 194);
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::NoFrame</enum>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="a_ta_season">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>310</y>
-     <width>221</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 193, 194);
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::NoFrame</enum>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="a_ta_tem">
-   <property name="geometry">
-    <rect>
-     <x>880</x>
-     <y>400</y>
-     <width>221</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(255, 193, 194);
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>
@@ -239,7 +205,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>90</y>
+     <y>70</y>
      <width>141</width>
      <height>201</height>
     </rect>
@@ -259,7 +225,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>450</y>
+     <y>430</y>
      <width>141</width>
      <height>201</height>
     </rect>
@@ -279,7 +245,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>450</y>
+     <y>430</y>
      <width>141</width>
      <height>201</height>
     </rect>
@@ -299,7 +265,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>450</y>
+     <y>430</y>
      <width>141</width>
      <height>201</height>
     </rect>
@@ -319,7 +285,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>310</y>
+     <y>290</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -329,7 +295,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
 font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>옷</string>
+    <string>가디건</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -339,7 +305,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>310</y>
+     <y>290</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -349,7 +315,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
 font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>옷</string>
+    <string>코트</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -359,7 +325,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>310</y>
+     <y>290</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -369,7 +335,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
 font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>옷</string>
+    <string>후리스</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -379,7 +345,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>60</x>
-     <y>670</y>
+     <y>650</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -389,7 +355,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
 font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>옷</string>
+    <string>후드집업</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -399,7 +365,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>250</x>
-     <y>670</y>
+     <y>650</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -409,7 +375,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
 font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>옷</string>
+    <string>자켓</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -419,7 +385,7 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>440</x>
-     <y>670</y>
+     <y>650</y>
      <width>141</width>
      <height>61</height>
     </rect>
@@ -429,11 +395,216 @@ font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
 font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>옷</string>
+    <string>패딩</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
    </property>
+  </widget>
+  <widget class="QGroupBox" name="a_gb_season">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>300</y>
+     <width>331</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QRadioButton" name="a_ra_s_summer">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>여름</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_s_fall">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>가을</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_s_winter">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>겨울</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_s_spring">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>봄</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="a_gb_tem">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>500</y>
+     <width>331</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <widget class="QRadioButton" name="a_ra_t20">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>110</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>20_초여름</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_t05">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>05_추움</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_t13">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>13_초가을</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_t10">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>10_쌀쌀</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_t15">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>15_적당</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="a_ra_t00">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 255, 146);
+font: 25 12pt &quot;나눔바른고딕 Light&quot;;</string>
+    </property>
+    <property name="text">
+     <string>00_얼어죽음</string>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

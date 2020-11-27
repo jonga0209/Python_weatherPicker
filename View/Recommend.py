@@ -14,10 +14,11 @@ class RecommendDialog(QDialog):
     def __init__(self):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
+        self.r_img_clothes1.setStyleSheet('image:url(../image/coat.png);')
+        self.show()
+        self.exec_()
 
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = RecommendDialog()
-    main_dialog.show()
-    app.exec_()
