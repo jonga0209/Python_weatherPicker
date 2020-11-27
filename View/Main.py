@@ -44,4 +44,4 @@ if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = MainDialog()
     main_dialog.show()
-    app.exec_()
+    sys.exit(app.exec_())
