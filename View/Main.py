@@ -10,6 +10,7 @@ from PyQt5 import uic
 from data.weather import Weather
 from data.date import Date
 from View.Recommend import RecommendDialog
+from View.Closet import ClosetDialog
 mainUi = '../_uiFile/viewMain.ui'
 
 class MainDialog(QDialog):
@@ -29,13 +30,21 @@ class MainDialog(QDialog):
         self.m_la_tem.setText(self.weather.getTemperature()+'°C')
 
         #클릭
-        self.m_btn_reco.clicked.connect(self.btn_recommend)
-        
+        self.m_btn_closet.clicked.connect(self.click_closet)
+        self.m_btn_reco.clicked.connect(self.click_recommend)
+
+        self.show()
+        self.exec_()
 
 
-    def btn_recommend(self):
+    def click_closet(self):
         self.accept()
-        r = RecommendDialog(self)
+        r = ClosetDialog()
+        r.show()
+
+    def click_recommend(self):
+        self.accept()
+        r = RecommendDialog()
         r.show()
 
 
