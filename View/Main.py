@@ -8,7 +8,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 from data.weather import Weather
-
+from data.date import Date
 mainUi = '../_uiFile/viewMain.ui'
 
 class MainDialog(QDialog):
@@ -16,10 +16,18 @@ class MainDialog(QDialog):
         super(MainDialog, self).__init__()
         QDialog.__init__(self, None)
         uic.loadUi(mainUi, self)
+        #날씨
         self.weather = Weather()
         self.weather.getWeather()
-        self.m_la_tem.setText(self.weather.getTemperature())
-        #self.m_la_year.setText("2002")
+        #날짜
+        self.date = Date()
+
+        #년도
+        self.m_la_year.setText(str(self.date.getYear()))
+        self.m_la_day.setText(self.date.__str__())
+        #온도
+        self.m_la_tem.setText(self.weather.getTemperature()+'°C')
+
 
 
 if __name__ == "__main__" :
