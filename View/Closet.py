@@ -8,6 +8,9 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
+from typing import TYPE_CHECKING
+
+
 
 closetUi = '../_uiFile/viewCloset.ui'
 
@@ -17,15 +20,22 @@ class ClosetDialog(QDialog):
         uic.loadUi(closetUi, self)
         # sys.exit(app.exec_())
         self.c_btn_main.clicked.connect(self.click_main)
-        self.show()
-        self.exec_()
+        self.c_btn_add.clicked.connect(self.click_add)
+
 
     def click_main(self):
-        print('ㅇ')
         from View.Main import MainDialog
         self.accept()
         r = MainDialog()
         r.show()
+        r.exec_()
+
+    def click_add(self):
+        from View.Add import AddDialog
+        self.accept()
+        r = AddDialog()
+        r.show()
+        r.exec_()
 
 
 if __name__ == "__main__" :

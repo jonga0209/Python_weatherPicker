@@ -15,9 +15,23 @@ class RecommendDialog(QDialog):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
         self.r_img_clothes1.setStyleSheet('image:url(../image/coat.png);')
-        self.show()
-        self.exec_()
-        sys.exit(app.exec_())
+
+        self.r_btn_main.clicked.connect(self.click_main)
+        self.r_btn_closet.clicked.connect(self.click_closet)
+
+    def click_main(self):
+        from View.Main import MainDialog
+        self.accept()
+        r = MainDialog()
+        r.show()
+        r.exec_()
+
+    def click_closet(self):
+        from View.Closet import ClosetDialog
+        self.accept()
+        r = ClosetDialog()
+        r.show()
+        r.exec_()
 
 
 if __name__ == "__main__" :
