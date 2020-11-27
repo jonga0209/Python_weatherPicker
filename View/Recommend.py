@@ -11,7 +11,7 @@ from PyQt5 import uic
 recommendUi = '../_uiFile/viewRecommend.ui'
 
 class RecommendDialog(QDialog):
-    def __init__(self):
+    def __init__(self,parent):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
 
