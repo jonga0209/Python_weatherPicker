@@ -8,17 +8,16 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
-mainUi = '../_uiFile/viewMain.ui'
+closetUi = '../_uiFile/viewCloset.ui'
 
-class MainDialog(QDialog):
+class ClosetDialog(QDialog):
     def __init__(self):
         QDialog.__init__(self, None)
-        uic.loadUi(mainUi, self)
-        self.la_state.setText("안녕하세요")
+        uic.loadUi(closetUi, self)
 
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
-    main_dialog = MainDialog()
+    main_dialog = ClosetDialog()
     main_dialog.show()
     app.exec_()
