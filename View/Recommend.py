@@ -17,7 +17,7 @@ class RecommendDialog(QDialog):
         self.r_img_clothes1.setStyleSheet('image:url(../image/coat.png);')
         self.show()
         self.exec_()
-
+        sys.exit(app.exec_())
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
