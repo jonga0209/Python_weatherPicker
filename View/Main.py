@@ -38,7 +38,6 @@ class MainDialog(QDialog):
         r = RecommendDialog(self)
         r.show()
 
-        print("클릭")
 
 
 if __name__ == "__main__" :
