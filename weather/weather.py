@@ -40,3 +40,4 @@ if __name__ == '__main__':
     weather.setLocation()
     weather.getWeather()
     weather.__str__()
+    print("")
