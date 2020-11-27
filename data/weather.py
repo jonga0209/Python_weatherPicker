@@ -6,7 +6,7 @@ from urllib.request import urlopen, Request
 import urllib
 import bs4
 
-class weather:
+class Weather:
 
     def __init__(self):
         self.location ='서울'
@@ -20,6 +20,12 @@ class weather:
 
     def setLocation(self):
         self.location = input("지역을 입력해주세요: ")
+
+    def getLocaion(self):
+        return self.location
+
+    def getTemperature(self):
+        return self.temperature
 
     def getWeather(self):
         enc_location = urllib.parse.quote(self.location + '+날씨')
