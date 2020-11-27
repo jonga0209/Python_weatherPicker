@@ -7,7 +7,6 @@ from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
-
 from data.weather import Weather
 
 mainUi = '../_uiFile/viewMain.ui'
@@ -21,7 +20,6 @@ class MainDialog(QDialog):
         self.weather.getWeather()
         self.m_la_tem.setText(self.weather.getTemperature())
         #self.m_la_year.setText("2002")
-
 
 
 if __name__ == "__main__" :

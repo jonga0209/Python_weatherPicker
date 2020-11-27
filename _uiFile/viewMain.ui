@@ -144,6 +144,96 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <widget class="QPushButton" name="m_btn_seoul">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>80</y>
+     <width>181</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgb(177, 240, 201);
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>서울</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_btn_busan">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>220</y>
+     <width>181</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgb(177, 240, 201);
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>부산</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_btn_dejun">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>360</y>
+     <width>181</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgb(177, 240, 201);
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>대전</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_btn_jeju">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>500</y>
+     <width>181</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgb(177, 240, 201);
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>제주</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="m_btn_reco_ham">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>640</y>
+     <width>181</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgb(177, 240, 201);
+border:0px;</string>
+   </property>
+   <property name="text">
+    <string>함양</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
