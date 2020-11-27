@@ -11,14 +11,16 @@ from PyQt5 import uic
 recommendUi = '../_uiFile/viewRecommend.ui'
 
 class RecommendDialog(QDialog):
-    def __init__(self,parent):
+    def __init__(self):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
         self.r_img_clothes1.setStyleSheet('image:url(../image/coat.png);')
         self.show()
         self.exec_()
-        sys.exit(app.exec_())
+
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = RecommendDialog()
+    main_dialog.show()
+    sys.exit(app.exec_())
