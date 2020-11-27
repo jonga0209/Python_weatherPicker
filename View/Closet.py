@@ -14,10 +14,10 @@ class ClosetDialog(QDialog):
     def __init__(self):
         QDialog.__init__(self, None)
         uic.loadUi(closetUi, self)
+        main_dialog.show()
+        app.exec_()
 
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = ClosetDialog()
-    main_dialog.show()
-    app.exec_()

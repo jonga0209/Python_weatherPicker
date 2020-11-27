@@ -30,6 +30,9 @@ class MainDialog(QDialog):
 
         #클릭
         self.m_btn_reco.clicked.connect(self.btn_recommend)
+        
+        main_dialog.show()
+        app.exec_()
 
     def btn_recommend(self):
         self.accept()
@@ -37,9 +40,6 @@ class MainDialog(QDialog):
         print("클릭")
 
 
-
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = MainDialog()
-    main_dialog.show()
-    app.exec_()

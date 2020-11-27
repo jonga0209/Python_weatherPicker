@@ -21,9 +21,9 @@ class AddDialog(QDialog):
         self.a_img_clothes5.setStyleSheet('image:url(../image/jacket.png);')
         self.a_img_clothes6.setStyleSheet('image:url(../image/padding.png);')
         self.a_img_tem.setStyleSheet('image:url(../image/tem.png);')
+        main_dialog.show()
+        app.exec_()
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = AddDialog()
-    main_dialog.show()
-    app.exec_()
