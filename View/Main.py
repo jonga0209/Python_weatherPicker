@@ -1,26 +1,23 @@
+# -*- coding: utf-8 -*-
+
 import sys
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QPushButton
 
+import PyQt5
+from PyQt5.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+from PyQt5 import uic
 
-class MyApp(QWidget):
+mainUi = '../_uiFile/viewMain.ui'
 
+class MainDialog(QDialog):
     def __init__(self):
-        super().__init__()
-        self.initUI()
-
-    def initUI(self):
-
-        btn1 = QPushButton('옷장', self)
-        btn1.move(1200, 50)
-        btn2 = QPushButton('Button2', self)
-        btn2.move(80, 53)
-
-        self.setWindowTitle('Absolute Positioning')
-        self.setGeometry(300, 50, 1300, 800)
-        self.show()
+        QDialog.__init__(self, None)
+        uic.loadUi(mainUi, self)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__" :
     app = QApplication(sys.argv)
-    ex = MyApp()
-    sys.exit(app.exec_())
+    main_dialog = MainDialog()
+    main_dialog.show()
+    app.exec_()
