@@ -20,10 +20,10 @@ class MainDialog(QDialog):
         self.weather.getWeather()
         self.m_la_tem.setText(self.weather.getTemperature())
         #self.m_la_year.setText("2002")
+        main_dialog.show()
+        app.exec_()
 
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = MainDialog()
-    main_dialog.show()
-    app.exec_()
