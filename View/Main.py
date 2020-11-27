@@ -14,6 +14,7 @@ class MainDialog(QDialog):
     def __init__(self):
         QDialog.__init__(self, None)
         uic.loadUi(mainUi, self)
+        self.la_state.setText("안녕하세요")
 
 
 if __name__ == "__main__" :
