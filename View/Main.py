@@ -41,8 +41,7 @@ class MainDialog(QDialog):
         self.m_btn_dejun.clicked.connect(lambda state,button = self.m_btn_dejun: self.click_area(state,button))
         self.m_btn_jeju.clicked.connect(lambda state,button = self.m_btn_jeju: self.click_area(state,button))
         self.m_btn_ham.clicked.connect(lambda state,button = self.m_btn_ham: self.click_area(state,button))
-        self.show()
-        self.exec_()
+
 
     def click_area(self,state ,button):
         self.weather.setLocation(button.text())
