@@ -216,7 +216,7 @@ border:0px;</string>
     <string>제주</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="m_btn_reco_ham">
+  <widget class="QPushButton" name="m_btn_ham">
    <property name="geometry">
     <rect>
      <x>70</x>
