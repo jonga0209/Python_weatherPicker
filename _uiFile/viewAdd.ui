@@ -46,7 +46,7 @@ border:0px;</string>
     <string>추가</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="a_btn_concel">
+  <widget class="QPushButton" name="a_btn_cancle">
    <property name="geometry">
     <rect>
      <x>900</x>
@@ -606,7 +606,7 @@ background-color: rgb(255, 190, 191);</string>
   </widget>
   <zorder>a_gb_clothes</zorder>
   <zorder>a_btn_add</zorder>
-  <zorder>a_btn_concel</zorder>
+  <zorder>a_btn_cancle</zorder>
   <zorder>a_la_id</zorder>
   <zorder>a_la_season</zorder>
   <zorder>a_la_tem</zorder>
