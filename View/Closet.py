@@ -42,7 +42,6 @@ class ClosetDialog(QDialog):
         f = open('../File/userClothesInfo.txt','r', encoding='UTF-8')
         try:
             lines = f.readlines()
-            print(lines)
             self.draw_ui(lines)
         except FileNotFoundError as e:
             print(e)
