@@ -144,11 +144,11 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="r_la_clothes1">
+  <widget class="QLabel" name="r_la_clothes1_n">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>650</y>
+     <x>470</x>
+     <y>630</y>
      <width>271</width>
      <height>61</height>
     </rect>
@@ -184,26 +184,6 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="r_la_clothes2">
-   <property name="geometry">
-    <rect>
-     <x>1000</x>
-     <y>250</y>
-     <width>271</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(144, 216, 255);
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QLabel" name="r_img_clothes3">
    <property name="geometry">
     <rect>
@@ -224,11 +204,151 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="r_la_clothes3">
+  <widget class="QLabel" name="r_la_clothes1_s">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>700</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes1_t">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>700</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes2_t">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>290</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes2_n">
    <property name="geometry">
     <rect>
      <x>1000</x>
-     <y>500</y>
+     <y>220</y>
+     <width>271</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes2_s">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>290</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes3_t">
+   <property name="geometry">
+    <rect>
+     <x>1140</x>
+     <y>540</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes3_s">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>540</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(144, 216, 255);
+font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="r_la_clothes3_n">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>470</y>
      <width>271</width>
      <height>61</height>
     </rect>
