@@ -27,13 +27,9 @@ class ClosetDialog(QDialog):
         self.name_labeles = []
         self.season_labeles = []
         self.temperature_labeles =[]
-        # for i in range(0,4):
-        #     label = QLabel("a",self)
-        #     label.setGeometry(20+i*320,170,171,211)
-        #     label.setStyleSheet('background-color: rgb(217, 197, 255)')
-        #     self.clothes_label.append(label)
 
-       # self.groupBox_1.hide()
+
+
         self.c_btn_main.clicked.connect(self.click_main)
         self.c_btn_add.clicked.connect(self.click_add)
         self.file_read()
@@ -47,6 +43,30 @@ class ClosetDialog(QDialog):
             print(e)
         finally:
             f.close()
+
+    def clickable(widget):
+
+        class Filter(QObject):
+
+            clicked = pyqtSignal()  # pyside2 사용자는 pyqtSignal() -> Signal()로 변경
+
+            def eventFilter(self, obj, event):
+
+                if obj == widget:
+                    if event.type() == QEvent.MouseButtonRelease:
+                        if obj.rect().contains(event.pos()):
+                            self.clicked.emit()
+                            # The developer can opt for .emit(obj) to get the object within the slot.
+                            return True
+
+                return False
+
+        filter = Filter(widget)
+        widget.installEventFilter(filter)
+        return filter.clicked
+
+    def Test(self):
+        print('클릭')
 
     def draw_ui(self,lines):
         j = 0
@@ -65,9 +85,9 @@ class ClosetDialog(QDialog):
 
             #옷
             img_clothes = QLabel('',self)
+            #self.clickable(img_clothes).connect(self.Test)
             img_clothes.setStyleSheet(self.img[int(clothes)])
             img_clothes.setGeometry(20+i*320,170+300*j,171,211)
-            #img_clothes.setStyleSheet('background-color: rgb(217, 197, 255)')
             self.clothes_labeles.append(img_clothes)
 
             #이름
