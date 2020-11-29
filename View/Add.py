@@ -125,7 +125,7 @@ class AddDialog(QDialog):
 
     def btn_add(self):
         #이름 입력 and 모두다 선택되어있을 떄
-        if(self.a_te_name != '' and self.clothes and self.tem and self.season != '-'):
+        if(self.a_te_name != '' and self.clothes != '-'and self.tem != '-'and self.season != '-'):
             self.name = self.a_te_name.toPlainText()
             self.fileWrite(self.name, self.season, self.tem, self.clothes)
 
