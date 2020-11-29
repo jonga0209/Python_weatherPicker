@@ -113,7 +113,7 @@ class AddDialog(QDialog):
             self.name = self.a_te_name.toPlainText()
 
         self.fileWrite(self.name, self.season, self.tem, self.clothes)
-        
+
         # 입력 확인은 처음에 init에서 모든 변수를 '-'를 기본으로 설정한 것을 바탕으로 해서 해결
         # if self.name, self.season, self.tem, self.clothes != '-':
         #     self.fileWrite(self.name, self.season, self.tem, self.clothes)
