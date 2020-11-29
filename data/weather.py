@@ -26,6 +26,7 @@ class Weather:
         return self.location
 
     def getTemperature(self):
+        self.getWeather()
         return self.temperature
 
     def getWeather(self):

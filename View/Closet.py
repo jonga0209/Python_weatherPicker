@@ -52,6 +52,9 @@ class ClosetDialog(QDialog):
         j = 0
         for i in range(0,len(lines)):
             line = lines[i].split('/')
+            if line[0] == '\n': # 혹시나 txt파일 건든후 마지막 줄 만들기xx(\n) 예외처리
+                break;
+
             name = line[0]
             season = line[1]
             temperature = line[2]

@@ -1,5 +1,2 @@
-미림 후드/fall/13/4
-하양패딩/winter/00/6
-트렌치코트/fall/13/2
-미림가디건/spring/10/1
-가죽/winter/10/5
+T1/spring/13/1
+T2/fall/05/2
