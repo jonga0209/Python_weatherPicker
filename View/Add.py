@@ -13,19 +13,10 @@ addUi = '../_uiFile/viewAdd.ui'
 class AddDialog(QDialog):
 
     #전역변수 사용시 self.season 처럼 사용
-    name = ''
-    season = ''
-    tem = ''
-    clothes = ''
-
-    def setSeason(self, s):
-        self.season = s
-
-    def setTem(self, t):
-        self.tem = t
-
-    def setClothes(self,c):
-        self.clothes = c
+    # name = ''
+    # season = ''
+    # tem = ''
+    # clothes = ''
 
     def __init__(self):
         QDialog.__init__(self, None)
@@ -47,6 +38,7 @@ class AddDialog(QDialog):
 
         #btn_리스너
         self.a_btn_add.clicked.connect(self.btn_add)
+        self.a_btn_cancle.clicked.connect(self.btn_cancle)
 
         #btn_radio season
         self.a_rb_s_spring.clicked.connect(self.groupBox_season)
@@ -62,13 +54,23 @@ class AddDialog(QDialog):
         self.a_rb_t16.clicked.connect(self.groupBox_tem)
         self.a_rb_t20.clicked.connect(self.groupBox_tem)
 
-        # btn_radio tem
+        # btn_radio clothes
         self.a_rb_clothes1.clicked.connect(self.groupBox_clothes)
         self.a_rb_clothes2.clicked.connect(self.groupBox_clothes)
         self.a_rb_clothes3.clicked.connect(self.groupBox_clothes)
         self.a_rb_clothes4.clicked.connect(self.groupBox_clothes)
         self.a_rb_clothes5.clicked.connect(self.groupBox_clothes)
         self.a_rb_clothes6.clicked.connect(self.groupBox_clothes)
+
+    def setSeason(self, s):
+        self.season = s
+
+    def setTem(self, t):
+        self.tem = t
+
+    def setClothes(self,c):
+        self.clothes = c
+
 
     def groupBox_season(self):
         if self.a_rb_s_spring.isChecked():
@@ -81,17 +83,17 @@ class AddDialog(QDialog):
             self.setSeason('winter')
 
     def groupBox_tem(self):
-        if self.a_rb_clothes1.isChecked():
+        if self.a_rb_t00.isChecked():
             self.setTem('00')
-        elif self.a_rb_clothes2.isChecked():
+        elif self.a_rb_t05.isChecked():
             self.setTem('05')
-        elif self.a_rb_clothes3.isChecked():
+        elif self.a_rb_t10.isChecked():
             self.setTem('10')
-        elif self.a_rb_clothes4.isChecked():
+        elif self.a_rb_t13.isChecked():
             self.setTem('13')
-        elif self.a_rb_clothes5.isChecked():
+        elif self.a_rb_t16.isChecked():
             self.setTem('16')
-        elif self.a_rb_clothes6.isChecked():
+        elif self.a_rb_t20.isChecked():
             self.setTem('20')
 
     def groupBox_clothes(self):
@@ -108,23 +110,37 @@ class AddDialog(QDialog):
         elif self.a_rb_clothes6.isChecked():
             self.setClothes('6')
 
+    def fileWrite(self,name,season,temperature, clothes):
+        print('성공')
+        #'a' : 쓰기를 위해 열려 있고, 파일의 끝에 추가하는 경우 추가합니다
+        #상대주소
+        f = open("../File/userClothesInfo.txt", 'a', encoding='UTF-8')
+        try:
+            f.write(name + '/' + season + '/' + temperature +'/'+ clothes +'\n')
+        except FileNotFoundError as e:
+            print(e)
+        finally:
+            f.close()
+            self.btn_cancle()
+
     def btn_add(self):
-        if(self.a_te_name != ''):
+        #이름 입력 and 모두다 선택되어있을 떄
+        if(self.a_te_name != '' and self.clothes and self.tem and self.season != '-'):
             self.name = self.a_te_name.toPlainText()
+            self.fileWrite(self.name, self.season, self.tem, self.clothes)
 
-        self.fileWrite(self.name, self.season, self.tem, self.clothes)
+        else:
+            QMessageBox.about(self,"message","모든항목을 다 입력해주세요")
+        
 
-        # 입력 확인은 처음에 init에서 모든 변수를 '-'를 기본으로 설정한 것을 바탕으로 해서 해결
-        # if self.name, self.season, self.tem, self.clothes != '-':
-        #     self.fileWrite(self.name, self.season, self.tem, self.clothes)
-        #     print('입력!')
-        # else:
-        #     print('잘못입력!')
+    def btn_cancle(self):
+        from View.Closet import ClosetDialog
+        self.accept()
+        r = ClosetDialog()
+        r.show()
+        r.exec_()
 
-    def fileWrite(self, n,s,t, c):
-        f = open("C:/Users/user/Python/Python_weatherPicker/File/fileTest.txt", 'a', encoding='UTF-8')
-        f.write(n + '/' + s + '/' + t +'/'+ c +'\n')
-        f.close()
+
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
