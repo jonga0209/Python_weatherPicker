@@ -121,8 +121,6 @@ class AddDialog(QDialog):
         # else:
         #     print('잘못입력!')
 
-
-
     def fileWrite(self, n,s,t, c):
         f = open("C:/Users/user/Python/Python_weatherPicker/File/fileTest.txt", 'a', encoding='UTF-8')
         f.write(n + '/' + s + '/' + t +'/'+ c +'\n')
@@ -132,4 +130,4 @@ if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = AddDialog()
     main_dialog.show()
-    app.exec_()
+    main_dialog.exec_()
