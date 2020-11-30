@@ -111,7 +111,6 @@ class AddDialog(QDialog):
             self.setClothes('6')
 
     def fileWrite(self,name,season,temperature, clothes):
-        print('성공')
         #'a' : 쓰기를 위해 열려 있고, 파일의 끝에 추가하는 경우 추가합니다
         #상대주소
         f = open("../File/userClothesInfo.txt", 'a', encoding='UTF-8')
@@ -125,8 +124,8 @@ class AddDialog(QDialog):
 
     def btn_add(self):
         #이름 입력 and 모두다 선택되어있을 떄
-        if(self.a_te_name != '' and self.clothes != '-'and self.tem != '-'and self.season != '-'):
-            self.name = self.a_te_name.toPlainText()
+        self.name = self.a_te_name.toPlainText()
+        if(self.name != '' and self.clothes != '-'and self.tem != '-'and self.season != '-'):
             self.fileWrite(self.name, self.season, self.tem, self.clothes)
 
         else:
