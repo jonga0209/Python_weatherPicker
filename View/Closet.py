@@ -56,9 +56,8 @@ class ClosetDialog(QDialog):
                 if j != i:
                     f_write.write(lines[j])
             f_write.close()
-            f_read = open("../File/userClothesInfo.txt", 'r', encoding='UTF-8')
-            a = f_read.readlines()
-            self.draw_ui(a)
+
+            self.file_read()
 
 
     def draw_ui(self,lines):
@@ -118,11 +117,16 @@ class ClosetDialog(QDialog):
         r.exec_()
 
     def click_add(self):
-        from View.Add import AddDialog
-        self.accept()
-        r = AddDialog()
-        r.show()
-        r.exec_()
+        f = open("../File/userClothesInfo.txt",'r',encoding='UTF-8')
+        lines = f.readlines()
+        if len(lines)>=8:
+            QMessageBox.about(self,"message","최대 8개까지 저장이가능합니다")
+        else:
+            from View.Add import AddDialog
+            self.accept()
+            r = AddDialog()
+            r.show()
+            r.exec_()
 
 
 if __name__ == "__main__" :
