@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import os.path
 
 import PyQt5
 from PyQt5.QtGui import *
@@ -27,71 +28,68 @@ class ClosetDialog(QDialog):
         self.name_labeles = []
         self.season_labeles = []
         self.temperature_labeles =[]
-
-
-
         self.c_btn_main.clicked.connect(self.click_main)
         self.c_btn_add.clicked.connect(self.click_add)
+
         self.file_read()
 
+
     def file_read(self):
-        f = open('../File/userClothesInfo.txt','r', encoding='UTF-8')
-        try:
-            lines = f.readlines()
-            self.draw_ui(lines)
-        except FileNotFoundError as e:
-            print(e)
-        finally:
+
+        file = '../File/userClothesInfo.txt'
+        if os.path.isfile(file)==False: #만약 파일이 없다면(앱을 처음 실행)
+            f  = open("../File/userClothesInfo.txt", 'a', encoding='UTF-8')
             f.close()
+        else:
+            f  = open(file,'r', encoding='UTF-8')
+            lines = f .readlines()
+            f.close()
+            self.draw_ui(lines)
 
-    def clickable(widget):
 
-        class Filter(QObject):
+    def delete(self,state,i,lines):
+        reply = QMessageBox.question(self, "삭제", "선택하신 항목을 삭제하시겠습니까?",QMessageBox.Yes | QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            f_write = open("../File/userClothesInfo.txt", 'w', encoding='UTF-8')
 
-            clicked = pyqtSignal()  # pyside2 사용자는 pyqtSignal() -> Signal()로 변경
+            for j in range(0,len(lines)):
+                if j != i:
+                    f_write.write(lines[j])
+            f_write.close()
 
-            def eventFilter(self, obj, event):
+            self.file_read()
 
-                if obj == widget:
-                    if event.type() == QEvent.MouseButtonRelease:
-                        if obj.rect().contains(event.pos()):
-                            self.clicked.emit()
-                            # The developer can opt for .emit(obj) to get the object within the slot.
-                            return True
-
-                return False
-
-        filter = Filter(widget)
-        widget.installEventFilter(filter)
-        return filter.clicked
-
-    def Test(self):
-        print('클릭')
 
     def draw_ui(self,lines):
         j = 0
+
+        for i in range(0,len(self.clothes_labeles)):
+            self.clothes_labeles[i].hide()
+            self.name_labeles[i].hide()
+            self.season_labeles[i].hide()
+            self.temperature_labeles[i].hide()
         for i in range(0,len(lines)):
             line = lines[i].split('/')
-            if line[0] == '\n': # 혹시나 txt파일 건든후 마지막 줄 만들기xx(\n) 예외처리
-                break;
-
             name = line[0]
             season = line[1]
             temperature = line[2]
             clothes = line[3]
 
+
             if i>3:j=1
-            i = i%4
 
             #옷
-            img_clothes = QLabel('',self)
-            #self.clickable(img_clothes).connect(self.Test)
-            img_clothes.setStyleSheet(self.img[int(clothes)])
+            img_clothes = QPushButton('',self)
+            img_clothes.show()
+            img_clothes.setStyleSheet(self.img[int(clothes)]+" border:0px")
+            img_clothes.clicked.connect(lambda state, i1 = i : self.delete(state,i1,lines))
+            i = i % 4
             img_clothes.setGeometry(20+i*320,170+300*j,171,211)
             self.clothes_labeles.append(img_clothes)
 
             #이름
             label_name = QLabel(name, self)
+            label_name.show()
             label_name.setAlignment(Qt.AlignCenter)
             label_name.setGeometry(20 + i * 320, 370+300*j, 171, 51)
             label_name.setStyleSheet('background-color: rgb(144, 216, 255)')
@@ -99,15 +97,17 @@ class ClosetDialog(QDialog):
 
             #계절
             label_season = QLabel(season, self)
+            label_season.show()
             label_season.setGeometry(200 + i * 320, 170+300*j, 121, 61)
             label_season.setStyleSheet('background-color: rgb(144, 216, 255)')
-            self.name_labeles.append(label_season)
+            self.season_labeles.append(label_season)
 
             #온도
             label_temperature = QLabel(temperature, self)
+            label_temperature.show()
             label_temperature.setGeometry(200 + i * 320, 240+300*j, 121, 61)
             label_temperature.setStyleSheet('background-color: rgb(144, 216, 255)')
-            self.name_labeles.append(label_temperature)
+            self.temperature_labeles.append(label_temperature)
 
 
     def click_main(self):
@@ -118,11 +118,16 @@ class ClosetDialog(QDialog):
         r.exec_()
 
     def click_add(self):
-        from View.Add import AddDialog
-        self.accept()
-        r = AddDialog()
-        r.show()
-        r.exec_()
+        f = open("../File/userClothesInfo.txt",'r',encoding='UTF-8')
+        lines = f.readlines()
+        if len(lines)>=8:
+            QMessageBox.about(self,"message","최대 8개까지 저장이가능합니다")
+        else:
+            from View.Add import AddDialog
+            self.accept()
+            r = AddDialog()
+            r.show()
+            r.exec_()
 
 
 if __name__ == "__main__" :
