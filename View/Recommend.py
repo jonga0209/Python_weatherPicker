@@ -28,7 +28,7 @@ class RecommendDialog(QDialog):
         weather = Weather()
         self.r_la_year.setText(str(date.getYear()))
         self.r_la_day.setText(date.__str__())
-        self.r_la_tem.setText(str(weather.getTemperature()))
+        self.r_la_tem.setText(str(weather.getTemperature())+'℃')
 
     def click_main(self):
         from View.Main import MainDialog
@@ -48,5 +48,7 @@ class RecommendDialog(QDialog):
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
     main_dialog = RecommendDialog()
-
+    main_dialog.show()
+    # 프로그램을 이벤트루프로 진입시키는(프로그램을 작동시키는) 코드
+    app.exec_()
 

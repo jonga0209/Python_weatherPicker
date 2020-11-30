@@ -41,18 +41,16 @@ class AddDialog(QDialog):
         self.a_btn_cancle.clicked.connect(self.btn_cancle)
 
         #btn_radio season
-        self.a_rb_s_spring.clicked.connect(self.groupBox_season)
-        self.a_rb_s_summer.clicked.connect(self.groupBox_season)
-        self.a_rb_s_fall.clicked.connect(self.groupBox_season)
+        self.a_rb_s_spring_fall.clicked.connect(self.groupBox_season)
         self.a_rb_s_winter.clicked.connect(self.groupBox_season)
 
         # btn_radio tem
-        self.a_rb_t00.clicked.connect(self.groupBox_tem)
-        self.a_rb_t05.clicked.connect(self.groupBox_tem)
-        self.a_rb_t10.clicked.connect(self.groupBox_tem)
-        self.a_rb_t13.clicked.connect(self.groupBox_tem)
-        self.a_rb_t16.clicked.connect(self.groupBox_tem)
-        self.a_rb_t20.clicked.connect(self.groupBox_tem)
+        self.a_rb_t1.clicked.connect(self.groupBox_tem)
+        self.a_rb_t2.clicked.connect(self.groupBox_tem)
+        self.a_rb_t3.clicked.connect(self.groupBox_tem)
+        self.a_rb_t4.clicked.connect(self.groupBox_tem)
+        self.a_rb_t5.clicked.connect(self.groupBox_tem)
+        #self.a_rb_t20.clicked.connect(self.groupBox_tem)
 
         # btn_radio clothes
         self.a_rb_clothes1.clicked.connect(self.groupBox_clothes)
@@ -73,28 +71,24 @@ class AddDialog(QDialog):
 
 
     def groupBox_season(self):
-        if self.a_rb_s_spring.isChecked():
-            self.setSeason('spring')
-        elif self.a_rb_s_summer.isChecked():
-            self.setSeason('summer')
-        elif self.a_rb_s_fall.isChecked():
-            self.setSeason('fall')
+        if self.a_rb_s_spring_fall.isChecked():
+            self.setSeason('spring/fall')
         elif self.a_rb_s_winter.isChecked():
             self.setSeason('winter')
 
     def groupBox_tem(self):
-        if self.a_rb_t00.isChecked():
-            self.setTem('00')
-        elif self.a_rb_t05.isChecked():
-            self.setTem('05')
-        elif self.a_rb_t10.isChecked():
-            self.setTem('10')
-        elif self.a_rb_t13.isChecked():
-            self.setTem('13')
-        elif self.a_rb_t16.isChecked():
-            self.setTem('16')
-        elif self.a_rb_t20.isChecked():
-            self.setTem('20')
+        if self.a_rb_t1.isChecked():
+            self.setTem('17℃~19℃')
+        elif self.a_rb_t2.isChecked():
+            self.setTem('12℃~16℃')
+        elif self.a_rb_t3.isChecked():
+            self.setTem('9℃~11℃')
+        elif self.a_rb_t4.isChecked():
+            self.setTem('5℃~8℃')
+        elif self.a_rb_t5.isChecked():
+            self.setTem('~4℃')
+        # elif self.a_rb_t20.isChecked():
+        #     self.setTem('20')
 
     def groupBox_clothes(self):
         if self.a_rb_clothes1.isChecked():
