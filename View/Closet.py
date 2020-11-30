@@ -62,6 +62,7 @@ class ClosetDialog(QDialog):
 
     def draw_ui(self,lines):
         j = 0
+
         for i in range(0,len(self.clothes_labeles)):
             self.clothes_labeles[i].hide()
             self.name_labeles[i].hide()
@@ -69,11 +70,11 @@ class ClosetDialog(QDialog):
             self.temperature_labeles[i].hide()
         for i in range(0,len(lines)):
             line = lines[i].split('/')
-
             name = line[0]
             season = line[1]
             temperature = line[2]
             clothes = line[3]
+
 
             if i>3:j=1
 

@@ -72,7 +72,7 @@ class AddDialog(QDialog):
 
     def groupBox_season(self):
         if self.a_rb_s_spring_fall.isChecked():
-            self.setSeason('spring/fall')
+            self.setSeason('spring,fall')
         elif self.a_rb_s_winter.isChecked():
             self.setSeason('winter')
 

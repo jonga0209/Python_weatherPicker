@@ -14,7 +14,6 @@ class RecommendDialog(QDialog):
     def __init__(self):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
-        self.r_img_clothes1.setStyleSheet('image:url(../image/coat.png);')
         self.r_btn_main.clicked.connect(self.click_main)
         self.r_btn_closet.clicked.connect(self.click_closet)
 
@@ -22,13 +21,22 @@ class RecommendDialog(QDialog):
 
 
     def draw_ui(self):
+        #날씨, 온도
         from data.date import Date
         from data.weather import Weather
         date = Date()
         weather = Weather()
+        temperature = weather.getTemperature()
         self.r_la_year.setText(str(date.getYear()))
         self.r_la_day.setText(date.__str__())
-        self.r_la_tem.setText(str(weather.getTemperature())+'℃')
+        self.r_la_tem.setText(str(temperature)+'℃')
+
+        # 옷 추천
+        f = open("../File/userClothesInfo.txt",'r',encoding='UTF-8')
+        lines = f.readlines()
+        for line in lines:
+            print(line)
+        self.r_img_clothes1.setStyleSheet('image:url(../image/coat.png);')
 
     def click_main(self):
         from View.Main import MainDialog
