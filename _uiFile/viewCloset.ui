@@ -39,7 +39,8 @@
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 236, 240);
+color: rgb(255, 255, 255);
+background-color: rgb(25, 36, 106);
 border:0px;</string>
    </property>
    <property name="text">
@@ -57,7 +58,8 @@ border:0px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 236, 240);
+color: rgb(255, 255, 255);
+background-color: rgb(25, 36, 106);
 border:0px;</string>
    </property>
    <property name="text">

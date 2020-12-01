@@ -39,7 +39,8 @@
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 236, 240);
+color: rgb(255, 255, 255);
+background-color: rgb(25, 36, 106);
 border:0px;</string>
    </property>
    <property name="text">
@@ -49,15 +50,16 @@ border:0px;</string>
   <widget class="QPushButton" name="m_btn_reco">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>520</y>
+     <x>670</x>
+     <y>590</y>
      <width>181</width>
      <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 240, 201);
+color: rgb(255, 255, 255);
+background-color: rgb(255, 105, 107);
 border:0px;</string>
    </property>
    <property name="text">
@@ -67,14 +69,14 @@ border:0px;</string>
   <widget class="QLabel" name="m_la_year">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>100</y>
+     <x>570</x>
+     <y>170</y>
      <width>351</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(144, 216, 255);
+    <string notr="true">
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -87,14 +89,14 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="m_la_day">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>180</y>
+     <x>510</x>
+     <y>250</y>
      <width>471</width>
      <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(144, 216, 255);
+    <string notr="true">
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -107,14 +109,14 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="m_la_state">
    <property name="geometry">
     <rect>
-     <x>730</x>
-     <y>320</y>
+     <x>780</x>
+     <y>390</y>
      <width>331</width>
      <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(144, 216, 255);
+    <string notr="true">
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -127,14 +129,14 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
   <widget class="QLabel" name="m_la_tem">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>320</y>
+     <x>390</x>
+     <y>390</y>
      <width>331</width>
      <height>111</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(144, 216, 255);
+    <string notr="true">
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -155,7 +157,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 240, 201);
+color: rgb(255, 255, 255);
+background-color: rgb(45, 63, 185);
 border:0px;</string>
    </property>
    <property name="text">
@@ -173,7 +176,9 @@ border:0px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 240, 201);
+selection-background-color: rgb(44, 56, 97);
+color: rgb(255, 255, 255);
+background-color: rgb(45, 63, 185);
 border:0px;</string>
    </property>
    <property name="text">
@@ -191,7 +196,8 @@ border:0px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 240, 201);
+color: rgb(255, 255, 255);
+background-color: rgb(45, 63, 185);
 border:0px;</string>
    </property>
    <property name="text">
@@ -209,7 +215,8 @@ border:0px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 240, 201);
+color: rgb(255, 255, 255);
+background-color: rgb(45, 63, 185);
 border:0px;</string>
    </property>
    <property name="text">
@@ -227,7 +234,8 @@ border:0px;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
-background-color: rgb(177, 240, 201);
+color: rgb(255, 255, 255);
+background-color: rgb(45, 63, 185);
 border:0px;</string>
    </property>
    <property name="text">

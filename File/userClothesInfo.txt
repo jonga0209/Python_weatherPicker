@@ -1,0 +1,3 @@
+fdf/spring,fall/17℃~19℃/3
+d/spring,fall/17℃~19℃/3
+d/winter/~4℃/6
