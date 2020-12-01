@@ -242,7 +242,7 @@ border:0px;</string>
     <string>함양</string>
    </property>
   </widget>
-  <widget class="QLabel" name="m_la_tem_2">
+  <widget class="QLabel" name="m_la_area">
    <property name="geometry">
     <rect>
      <x>390</x>
