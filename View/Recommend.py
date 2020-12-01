@@ -17,6 +17,10 @@ class RecommendDialog(QDialog):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
 
+        # 창
+        self.setWindowIcon(QIcon("../image/hang_1.png"))
+        self.setWindowTitle("recommend")
+
         self.r_img_clothes1.setStyleSheet('image:url(../image/hang.png);')
         self.r_img_clothes2.setStyleSheet('image:url(../image/hang_1.png);')
         self.r_img_clothes3.setStyleSheet('image:url(../image/hang_1.png);')
