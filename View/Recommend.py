@@ -20,7 +20,7 @@ class RecommendDialog(QDialog):
         self.r_btn_closet.clicked.connect(self.click_closet)
         self.img = ['', 'image:url(../image/cardigan.png);', 'image:url(../image/coat.png);','image:url(../image/fleece.png);', 'image:url(../image/hoodzip_up.png);'
             , 'image:url(../image/jacket.png);', 'image:url(../image/padding.png);']
-        self.tems = ['17℃~19℃', '12℃~16℃', '9℃~11℃', '5℃~8℃', '~4℃']
+        self.tems = ['','17℃~19℃', '12℃~16℃', '9℃~11℃', '5℃~8℃', '~4℃','']
         self.weather = weather
         self.clothes = ['-' for i in range(3)]
         self.names = ['-' for i in range(3)]
@@ -39,22 +39,25 @@ class RecommendDialog(QDialog):
         self.r_la_year.setText(str(date.getYear()))
         self.r_la_day.setText(date.__str__())
         self.r_la_tem.setText(str(temperature)+'℃')
+        self.r_la_state.setText(self.weather.getComment())
 
         # 옷 추천
         f = open("../File/userClothesInfo.txt",'r',encoding='UTF-8')
         tem = 0
         if temperature>=20:
+            #20도 이상 넘어가면 겉옷 없어도 된다고
             pass
         elif 17<=temperature<=19:
-            tem = 0
-        elif 12<=temperature<=16:
             tem = 1
-        elif 9<=temperature<=11:
+        elif 12<=temperature<=16:
             tem = 2
-        elif 5<=temperature<=8:
+        elif 9<=temperature<=11:
             tem = 3
-        elif temperature<=4:
+        elif 5<=temperature<=8:
             tem = 4
+        elif temperature<=4:
+
+            tem = 5
 
         lines = f.readlines()
         i = 0
@@ -67,9 +70,20 @@ class RecommendDialog(QDialog):
                     self.temperatures[i] = line[2]
                     self.clothes[i] = line[3]
                     i += 1
-                    print(line)
-                else:
+
+
+        if i<3:
+            for line in lines:
+                line = line.split('/')
+                if i < 3:  # 3번
                     if line[2] == self.tems[tem-1]:
+                        self.names[i] = line[0]
+                        self.weathers[i] = line[1]
+                        self.temperatures[i] = line[2]
+                        self.clothes[i] = line[3]
+                        i += 1
+
+                    elif line[2] == self.tems[tem+1]:
                         self.names[i] = line[0]
                         self.weathers[i] = line[1]
                         self.temperatures[i] = line[2]

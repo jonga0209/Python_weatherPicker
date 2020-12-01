@@ -12,6 +12,7 @@ class Weather:
         self.location ='서울'
         self.temperature =''
         self.url=''
+        self.comment = ''
 
 
     def __str__(self):
@@ -29,6 +30,9 @@ class Weather:
         self.getWeather()
         return self.temperature
 
+    def getComment(self):
+        return self.comment
+
     def getWeather(self):
         enc_location = urllib.parse.quote(self.location + '+날씨')
         self.url = 'https://search.naver.com/search.naver?ie=utf8&query=' + enc_location
@@ -37,6 +41,7 @@ class Weather:
         html = page.read()
         soup = bs4.BeautifulSoup(html, 'html5lib')
         self.temperature = soup.find('p', class_='info_temperature').find('span',class_='todaytemp').text
+        self.comment = soup.find('p',{"class":'cast_txt'}).text
         #print(self.temperature)
 
 
@@ -45,7 +50,7 @@ class Weather:
 
 if __name__ == '__main__':
     weather = Weather()
-    weather.setLocation()
+
     weather.getWeather()
     weather.__str__()
 
