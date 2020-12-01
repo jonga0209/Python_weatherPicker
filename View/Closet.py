@@ -92,21 +92,21 @@ class ClosetDialog(QDialog):
             label_name.show()
             label_name.setAlignment(Qt.AlignCenter)
             label_name.setGeometry(20 + i * 320, 370+300*j, 171, 51)
-            label_name.setStyleSheet('background-color: rgb(144, 216, 255); font: 25 15pt "나눔바른고딕 Light";')
+            label_name.setStyleSheet('font: 25 15pt "나눔바른고딕 Light";')
             self.name_labeles.append(label_name)
 
             #계절
             label_season = QLabel(season, self)
             label_season.show()
             label_season.setGeometry(200 + i * 320, 170+300*j, 121, 61)
-            label_season.setStyleSheet('background-color: rgb(144, 216, 255); font: 25 10pt "나눔바른고딕 Light";')
+            label_season.setStyleSheet('font: 25 10pt "나눔바른고딕 Light";')
             self.season_labeles.append(label_season)
 
             #온도
             label_temperature = QLabel(temperature, self)
             label_temperature.show()
             label_temperature.setGeometry(200 + i * 320, 240+300*j, 121, 61)
-            label_temperature.setStyleSheet('background-color: rgb(144, 216, 255); font: 25 10pt "나눔바른고딕 Light";')
+            label_temperature.setStyleSheet(' font: 25 10pt "나눔바른고딕 Light";')
             self.temperature_labeles.append(label_temperature)
 
 

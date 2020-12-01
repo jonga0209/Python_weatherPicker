@@ -40,7 +40,7 @@
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
 color: rgb(255, 255, 255);
-background-color: rgb(255, 105, 107);
+background-color: rgb(25, 36, 106);
 border:0px;</string>
    </property>
    <property name="text">
@@ -189,8 +189,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="styleSheet">
     <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
 selection-background-color: rgb(44, 56, 97);
-color: rgb(255, 255, 255);
-background-color: rgb(45, 63, 185);</string>
+color: rgb(42, 61, 111);
+background-color: rgb(197, 218, 255);</string>
    </property>
    <property name="frameShape">
     <enum>QFrame::NoFrame</enum>

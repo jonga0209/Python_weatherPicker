@@ -26,7 +26,8 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">
+color: rgb(234, 184, 255);</string>
   </property>
   <widget class="QPushButton" name="m_btn_seoul">
    <property name="geometry">

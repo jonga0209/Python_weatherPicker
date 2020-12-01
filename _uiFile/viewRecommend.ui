@@ -31,7 +31,7 @@
   <widget class="QPushButton" name="r_btn_closet">
    <property name="geometry">
     <rect>
-     <x>1100</x>
+     <x>1120</x>
      <y>40</y>
      <width>150</width>
      <height>80</height>
@@ -117,7 +117,7 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="styleSheet">
     <string notr="true">
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+font: 25 13pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -130,13 +130,13 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>429</x>
-     <y>150</y>
+     <y>90</y>
      <width>361</width>
      <height>460</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(217, 197, 255);
+    <string notr="true">background-color: rgb(46, 64, 185);
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -150,17 +150,17 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>630</y>
+     <y>570</y>
      <width>271</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string>옷이 없어요</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -210,16 +210,17 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>470</x>
-     <y>700</y>
+     <y>640</y>
      <width>131</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -229,16 +230,17 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>700</y>
+     <y>640</y>
      <width>131</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
+    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -254,7 +256,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -267,13 +270,13 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>1000</x>
-     <y>220</y>
+     <y>200</y>
      <width>271</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -293,7 +296,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -312,7 +316,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -331,7 +336,8 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+font: 25 15pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -344,13 +350,13 @@ font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    <property name="geometry">
     <rect>
      <x>1000</x>
-     <y>470</y>
+     <y>450</y>
      <width>271</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
 font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
    </property>
    <property name="text">
@@ -382,55 +388,58 @@ border:0px;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="r_la_clothes2_n_2">
+  <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
     <rect>
-     <x>1000</x>
-     <y>220</y>
-     <width>271</width>
-     <height>61</height>
+     <x>830</x>
+     <y>170</y>
+     <width>441</width>
+     <height>221</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
+   <property name="title">
+    <string/>
    </property>
-   <property name="text">
-    <string>옷을 추가해 주세요</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="flat">
+    <bool>false</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="r_la_clothes2_n_3">
+  <widget class="QGroupBox" name="groupBox_2">
    <property name="geometry">
     <rect>
-     <x>1000</x>
-     <y>470</y>
-     <width>271</width>
-     <height>61</height>
+     <x>420</x>
+     <y>80</y>
+     <width>381</width>
+     <height>641</height>
     </rect>
    </property>
-   <property name="styleSheet">
-    <string notr="true">
-font: 25 20pt &quot;나눔바른고딕 Light&quot;;</string>
-   </property>
-   <property name="text">
-    <string>옷을 추가해 주세요</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
+   <property name="title">
+    <string/>
    </property>
   </widget>
-  <zorder>r_la_clothes2_n_2</zorder>
-  <zorder>r_la_clothes2_n_3</zorder>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>420</y>
+     <width>441</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <zorder>groupBox_2</zorder>
+  <zorder>r_la_clothes1_n</zorder>
+  <zorder>groupBox_3</zorder>
+  <zorder>groupBox</zorder>
   <zorder>r_btn_closet</zorder>
   <zorder>r_btn_main</zorder>
   <zorder>r_la_year</zorder>
   <zorder>r_la_day</zorder>
   <zorder>r_la_state</zorder>
   <zorder>r_img_clothes1</zorder>
-  <zorder>r_la_clothes1_n</zorder>
   <zorder>r_img_clothes2</zorder>
   <zorder>r_img_clothes3</zorder>
   <zorder>r_la_clothes1_s</zorder>

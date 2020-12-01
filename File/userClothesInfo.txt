@@ -1,3 +1,2 @@
-fdf/spring,fall/17℃~19℃/3
-d/spring,fall/17℃~19℃/3
-d/winter/~4℃/6
+파랑색 옷/winter/12℃~16℃/3
+미림 코트/winter/9℃~11℃/2

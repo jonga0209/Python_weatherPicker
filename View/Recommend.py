@@ -16,6 +16,12 @@ class RecommendDialog(QDialog):
     def __init__(self,weather):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
+
+        self.r_img_clothes1.setStyleSheet('image:url(../image/hang.png);')
+        self.r_img_clothes2.setStyleSheet('image:url(../image/hang_1.png);')
+        self.r_img_clothes3.setStyleSheet('image:url(../image/hang_1.png);')
+
+
         self.r_btn_main.clicked.connect(self.click_main)
         self.r_btn_closet.clicked.connect(self.click_closet)
         self.img = ['', 'image:url(../image/cardigan.png);', 'image:url(../image/coat.png);','image:url(../image/fleece.png);', 'image:url(../image/hoodzip_up.png);'
@@ -28,7 +34,6 @@ class RecommendDialog(QDialog):
         self.temperatures = ['-' for i in range(3)]
 
         self.draw_ui()
-
 
     def draw_ui(self):
         #날씨, 온도
@@ -91,11 +96,6 @@ class RecommendDialog(QDialog):
                         i += 1
 
 
-        print(self.names)
-        print(self.weathers)
-        print(self.temperatures)
-        print(self.clothes)
-
         #ui
         if self.names[0]!='-':
             self.r_img_clothes1.setStyleSheet(self.img[int(self.clothes[0])])
@@ -112,7 +112,7 @@ class RecommendDialog(QDialog):
             self.r_la_clothes2_s.setText(self.weathers[1])
             self.r_la_clothes2_t.setText(self.temperatures[1])
         else:
-            self.r_img_clothes2.hide()
+            # self.r_img_clothes2.hide()
             self.r_la_clothes2_n.hide()
             self.r_la_clothes2_s.hide()
             self.r_la_clothes2_t.hide()
@@ -123,7 +123,7 @@ class RecommendDialog(QDialog):
             self.r_la_clothes3_s.setText(self.weathers[2])
             self.r_la_clothes3_t.setText(self.temperatures[2])
         else:
-            self.r_img_clothes3.hide()
+            # self.r_img_clothes3.hide()
             self.r_la_clothes3_n.hide()
             self.r_la_clothes3_s.hide()
             self.r_la_clothes3_t.hide()
