@@ -22,6 +22,10 @@ class ClosetDialog(QDialog):
     def __init__(self):
         QDialog.__init__(self, None)
         uic.loadUi(closetUi, self)
+        # 창
+        self.setWindowIcon(QIcon("../image/hang_1.png"))
+        self.setWindowTitle("closet")
+
         self.img = ['','image:url(../image/cardigan.png);','image:url(../image/coat.png);','image:url(../image/fleece.png);','image:url(../image/hoodzip_up.png);'
            ,'image:url(../image/jacket.png);','image:url(../image/padding.png);','image:url(../image/tem.png);']
         self.clothes_labeles = []

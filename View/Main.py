@@ -22,6 +22,10 @@ class MainDialog(QDialog):
         super(MainDialog, self).__init__()
         QDialog.__init__(self, None)
         uic.loadUi(mainUi, self)
+
+        #창
+        self.setWindowIcon(QIcon("../image/hang_1.png"))
+        self.setWindowTitle("weather's Picker")
         #날씨
         self.weather = Weather()
         self.weather.getWeather()

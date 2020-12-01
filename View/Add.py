@@ -22,6 +22,10 @@ class AddDialog(QDialog):
         QDialog.__init__(self, None)
         uic.loadUi(addUi, self)
 
+        # 창
+        self.setWindowIcon(QIcon("../image/hang_1.png"))
+        self.setWindowTitle("add")
+
         self.name = '-'
         self.season = '-'
         self.tem = '-'
