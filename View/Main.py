@@ -12,7 +12,7 @@ from data.date import Date
 
 # from typing import TYPE_CHECKING
 # if TYPE_CHECKING:
-from View.Recommend import RecommendDialog
+
 from View.Closet import ClosetDialog
 
 mainUi = '../_uiFile/viewMain.ui'
@@ -43,10 +43,13 @@ class MainDialog(QDialog):
         self.m_btn_ham.clicked.connect(lambda state,button = self.m_btn_ham: self.click_area(state,button))
 
 
+
+    def get_weather(self):
+        return self.weather
+
     def click_area(self,state ,button):
         self.weather.setLocation(button.text())
         self.weather.getWeather()
-        #self.weather.__str__()
         self.m_la_tem.setText(self.weather.getTemperature()+'°C')
 
     def click_closet(self):
@@ -56,8 +59,9 @@ class MainDialog(QDialog):
         r.exec_()
 
     def click_recommend(self):
+        from View.Recommend import RecommendDialog
         self.accept()
-        r = RecommendDialog()
+        r = RecommendDialog(self.weather)
         r.show()
         r.exec_()
 
