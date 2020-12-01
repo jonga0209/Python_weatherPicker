@@ -9,11 +9,11 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 
 recommendUi = '../_uiFile/viewRecommend.ui'
-
+from View.Main import MainDialog
 class RecommendDialog(QDialog):
 
 
-    def __init__(self):
+    def __init__(self,weather):
         QDialog.__init__(self, None)
         uic.loadUi(recommendUi, self)
         self.r_btn_main.clicked.connect(self.click_main)
@@ -21,7 +21,7 @@ class RecommendDialog(QDialog):
         self.img = ['', 'image:url(../image/cardigan.png);', 'image:url(../image/coat.png);','image:url(../image/fleece.png);', 'image:url(../image/hoodzip_up.png);'
             , 'image:url(../image/jacket.png);', 'image:url(../image/padding.png);']
         self.tems = ['17℃~19℃', '12℃~16℃', '9℃~11℃', '5℃~8℃', '~4℃']
-
+        self.weather = weather
         self.clothes = ['-' for i in range(3)]
         self.names = ['-' for i in range(3)]
         self.weathers = ['-' for i in range(3)]
@@ -33,10 +33,9 @@ class RecommendDialog(QDialog):
     def draw_ui(self):
         #날씨, 온도
         from data.date import Date
-        from data.weather import Weather
         date = Date()
-        weather = Weather()
-        temperature = int(weather.getTemperature())
+
+        temperature = int(self.weather.getTemperature())
         self.r_la_year.setText(str(date.getYear()))
         self.r_la_day.setText(date.__str__())
         self.r_la_tem.setText(str(temperature)+'℃')
@@ -67,6 +66,7 @@ class RecommendDialog(QDialog):
                     self.weathers[i] = line[1]
                     self.temperatures[i] = line[2]
                     self.clothes[i] = line[3]
+                    i += 1
                     print(line)
                 else:
                     if line[2] == self.tems[tem-1]:
@@ -74,7 +74,8 @@ class RecommendDialog(QDialog):
                         self.weathers[i] = line[1]
                         self.temperatures[i] = line[2]
                         self.clothes[i] = line[3]
-            i+=1
+                        i += 1
+
 
         print(self.names)
         print(self.weathers)
@@ -114,7 +115,7 @@ class RecommendDialog(QDialog):
             self.r_la_clothes3_t.hide()
 
     def click_main(self):
-        from View.Main import MainDialog
+
         self.accept()
         r = MainDialog()
         r.show()
@@ -130,7 +131,8 @@ class RecommendDialog(QDialog):
 
 if __name__ == "__main__" :
     app = QApplication(sys.argv)
-    main_dialog = RecommendDialog()
+    weather = MainDialog.get_weather
+    main_dialog = RecommendDialog(weather)
     main_dialog.show()
     # 프로그램을 이벤트루프로 진입시키는(프로그램을 작동시키는) 코드
     app.exec_()
