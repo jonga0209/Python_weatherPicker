@@ -26,7 +26,7 @@ class RecommendDialog(QDialog):
         self.r_btn_closet.clicked.connect(self.click_closet)
         self.img = ['', 'image:url(../image/cardigan.png);', 'image:url(../image/coat.png);','image:url(../image/fleece.png);', 'image:url(../image/hoodzip_up.png);'
             , 'image:url(../image/jacket.png);', 'image:url(../image/padding.png);']
-        self.tems = ['','17℃~19℃', '12℃~16℃', '9℃~11℃', '5℃~8℃', '~4℃','']
+        self.tems = ['','17℃~19℃', '12℃~16℃', '9℃~11℃', '5℃~8℃', '~4℃','','옷이없습니다',""]
         self.weather = weather
         self.clothes = ['-' for i in range(3)]
         self.names = ['-' for i in range(3)]
@@ -50,8 +50,7 @@ class RecommendDialog(QDialog):
         f = open("../File/userClothesInfo.txt",'r',encoding='UTF-8')
         tem = 0
         if temperature>=20:
-            #20도 이상 넘어가면 겉옷 없어도 된다고
-            pass
+            tem = 7
         elif 17<=temperature<=19:
             tem = 1
         elif 12<=temperature<=16:
@@ -61,7 +60,6 @@ class RecommendDialog(QDialog):
         elif 5<=temperature<=8:
             tem = 4
         elif temperature<=4:
-
             tem = 5
 
         lines = f.readlines()
